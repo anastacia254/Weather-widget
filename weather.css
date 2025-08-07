@@ -1,0 +1,74 @@
+/* Import the pixel font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  transition: background 0.4s, color 0.4s;
+  padding: 20px;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* ☀️ Light mode: Orange background, dark text */
+.sunrise {
+  background-color: #8EA2D7; /* Orange */
+  color: #1a1a1a;            /* Dark text for readability */
+}
+
+/* 🌑 Dark mode: Faded black background, light text */
+.sunset {
+  background-color: #1a1a1a; /* Faded black */
+  color: #f0f0f0;            /* Light text */
+}
+
+.weather-widget {
+  max-width: 320px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#weather-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.toggle input[type="checkbox"] {
+  display: none;
+}
+
+.slider {
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  position: relative;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.slider::before {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider::before {
+  transform: translateX(30px);
+}
