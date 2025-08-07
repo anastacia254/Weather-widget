@@ -7,7 +7,7 @@ A pixel-style weather widget built using HTML, CSS, and JavaScript. It fetches l
 - Weather code translation to user-friendly groups
 - Custom icons for weather types
 - Pixel font (Press Start 2P)
-- Theme toggle: orange (light) & faded black (dark)
+- Theme toggle: sailing blue (light) & faded black (dark)
 - Fully responsive and browser-friendly
 
 ## 🚀 Technologies
